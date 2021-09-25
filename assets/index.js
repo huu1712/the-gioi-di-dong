@@ -39,8 +39,7 @@ function showSlides(n) {
 
 var swiper = new Swiper(".mySwiper", {
     loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
+    slidesPerView: 5,
     freeMode: true,
     watchSlidesProgress: true,
 });

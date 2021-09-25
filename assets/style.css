@@ -328,7 +328,9 @@ body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1
     box-shadow: 0 0 4px rgb(0 0 0 / 25%);
     border-radius: 0 0 5px 5px;
 }
-
+.banner .main-banner .main-banner__wrapper .main-banner__navigation .main-banner__navigation-item{
+    padding: 5px;
+}
 .banner .main-banner .main-banner__wrapper .main-banner__navigation .main-banner__navigation-item {
     text-align: center;
     position: relative;
@@ -340,7 +342,7 @@ body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1
     height: 30px;
     position: absolute;
     top: calc(50% - 15px);
-    right: -15px;
+    right: 0px;
     width: 1px;
 }
 
