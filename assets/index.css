@@ -43,9 +43,47 @@ body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1
     position: relative;
 }
 
-.header .header__banner .container img {
+.header .header__banner .container .top-banner__wrapper .top-banner__slidding-item img {
     height: 100%;
     width: 100%;
+}
+
+.header .header__banner .container .top-banner__wrapper .button-next,
+.header .header__banner .container .top-banner__wrapper .button-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    color: #232323;
+    font-weight: bold;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    font-size: 30px;
+}
+
+.header .header__banner .container .top-banner__wrapper .button-next:hover,
+.header .header__banner .container .top-banner__wrapper .button-prev:hover {
+    color: #FFF;
+}
+
+.header .header__banner .container .top-banner__wrapper .button-next {
+    right: 0;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: .5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 /*Header navbar*/
@@ -228,7 +266,8 @@ body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1
     padding: 0 10px;
     position: relative;
 }
-.header .header__menu .container ul li a .onsale{
+
+.header .header__menu .container ul li a .onsale {
     display: inline-block;
     border: 0;
     background-color: #f51212;
@@ -242,7 +281,8 @@ body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1
     top: -10px;
     line-height: 13px;
 }
-.header .header__menu .container ul li a .onsale:after{
+
+.header .header__menu .container ul li a .onsale:after {
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
     border-top: 3px solid #f00;
@@ -254,6 +294,86 @@ body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1
 }
 
 .header .header__menu .container ul li:hover,
-.header .header__menu .container ul li.active{
+.header .header__menu .container ul li.active {
     background: #FFF;
+}
+
+/*Banner*/
+.banner {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner .main-banner {
+    display: flex;
+}
+
+.banner .main-banner .main-banner__wrapper {
+    width: 830px;
+}
+
+.banner .main-banner .main-banner__wrapper .main-banner__slidding {
+    display: flex;
+}
+
+.banner .main-banner .main-banner__wrapper .main-banner__slidding .main-banner__slidding-item {
+    display: flex;
+}
+
+.banner .main-banner .main-banner__wrapper .main-banner__navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 25%);
+    border-radius: 0 0 5px 5px;
+}
+
+.banner .main-banner .main-banner__wrapper .main-banner__navigation .main-banner__navigation-item {
+    text-align: center;
+    position: relative;
+}
+
+.banner .main-banner .main-banner__wrapper .main-banner__navigation .main-banner__navigation-item:not(:last-child):before {
+    background-color: #e5e5e5;
+    content: '';
+    height: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: -15px;
+    width: 1px;
+}
+
+.banner .secondary-banner {
+    width: calc(100% - 830px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner .secondary-banner .secondary-banner__item {
+    width: calc(50% - 15px);
+    display: flex;
+    padding: 0 0 10px 15px;
+}
+
+.banner .secondary-banner .secondary-banner__item img {
+    width: 100%;
+}
+
+.banner .vertical-banner {
+    margin-top: 5px;
+}
+
+.banner .side-banner .side-banner__left,
+.banner .side-banner .side-banner__right {
+    position: fixed;
+    top: 25%;
+}
+
+.banner .side-banner .side-banner__left {
+    left: calc(((100vw - 1200px) / 2) - 95px)
+}
+
+.banner .side-banner .side-banner__right {
+    right: calc(((100vw - 1200px) / 2) - 95px)
 }
