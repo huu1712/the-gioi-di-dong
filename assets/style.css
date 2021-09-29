@@ -450,7 +450,7 @@ h6 a {
     
 }
 
-.seccon_item_onl-sale {
+.second_item_onl-sale {
   
   width: 230px;
   background-color: #fff;
@@ -460,7 +460,7 @@ h6 a {
   cursor: pointer;
 }
 
-.thirst_item_onl-sale{
+.third_item_onl-sale{
   display: block;
     padding: 10px 15px;
 }
@@ -490,17 +490,22 @@ h6 a {
     text-transform: uppercase;
 }
 
+.img_item_onl-sale{
+  height: 220px;
+}
+
 .img_item_onl-sale img {
   margin-top: 15px;
   width: 198px;
   height: 198px;
+  transition: .5s;
 }
 
 .img_item_onl-sale img:hover{
   margin-top: 0px;
 }
 
-.seccon_item_onl-sale h3 {
+.second_item_onl-sale h3 {
   font-size: 14px;
   line-height: 20px;
   overflow: hidden;
@@ -508,11 +513,11 @@ h6 a {
   color: #333;
 }
 
-.seccon_item_onl-sale h3:hover{
+.second_item_onl-sale h3:hover{
     color: #288ad6
 }
 
-.seccon_item_onl-sale .product_item_onl-sale {
+.second_item_onl-sale .product_item_onl-sale {
   color: #333;
   font-size: 12px;
   line-height: 16px;
@@ -520,7 +525,7 @@ h6 a {
   margin-bottom: 5px;
 }
 
-.seccon_item_onl-sale strong {
+.second_item_onl-sale strong {
   color: #222;
   display: block;
   font-size: 16px;
