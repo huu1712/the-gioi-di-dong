@@ -1,219 +1,341 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML & CSS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-</head>
-<body>
-<header class="header">
-    <div class="header__banner">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__banner">
         <div class="container">
-            <div class="top-banner__wrapper">
-                <div class="top-banner__slidding-item fade">
-                    <img src="./assets/img/bannermatbang1200x44-1200x44-1.png" alt="">
-                </div>
-                <div class="top-banner__slidding-item fade">
-                    <img src="./assets/img/1200-44-1200x44-8.png" alt="">
-                </div>
-                <div class="top-banner__slidding-item fade">
-                    <img src="./assets/img/1200-44(1)-1200x44.png" alt="">
-                </div>
-                <div class='button-next' onclick="plusSlides(-1)">
-                    <i class="fas fa-chevron-right"></i>
-                </div>
-                <div class='button-prev' onclick="plusSlides(1)">
-                    <i class="fas fa-chevron-left"></i>
-                </div>
+          <div class="top-banner__wrapper">
+            <div class="top-banner__slidding-item fade">
+              <img
+                src="./assets/img/bannermatbang1200x44-1200x44-1.png"
+                alt=""
+              />
             </div>
+            <div class="top-banner__slidding-item fade">
+              <img src="./assets/img/1200-44-1200x44-8.png" alt="" />
+            </div>
+            <div class="top-banner__slidding-item fade">
+              <img src="./assets/img/1200-44(1)-1200x44.png" alt="" />
+            </div>
+            <div class="button-next" onclick="plusSlides(-1)">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="button-prev" onclick="plusSlides(1)">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="header__navbar">
+      </div>
+      <div class="header__navbar">
         <div class="container">
-            <div class="logo">
-                <img src="./assets/img/thegioididong.png" alt="">
+          <div class="logo">
+            <img src="./assets/img/thegioididong.png" alt="" />
+          </div>
+          <div class="toolbar">
+            <div class="location">
+              <span>Xem giá, khuyến mãi tại</span>
+              <span>Hồ Chí Minh <i class="fas fa-chevron-down"></i></span>
             </div>
-            <div class="toolbar">
-                <div class="location">
-                    <span>Xem giá, khuyến mãi tại</span>
-                    <span>Hồ Chí Minh <i class="fas fa-chevron-down"></i></span>
-                </div>
-                <div class="search-box">
-                    <input type="text" class="search" placeholder="Bạn tìm gì...">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="cart">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Giỏ hàng</span>
-                </div>
-                <div class="history-order">
-                    <a href="#">Lịch sử<br> đơn hàng</a>
-                </div>
+            <div class="search-box">
+              <input type="text" class="search" placeholder="Bạn tìm gì..." />
+              <i class="fas fa-search"></i>
             </div>
-            <div class="promotion">
-                <div class="dot"></div>
-                <p>Viettel trả sau đến hạn thanh toán. Mua thẻ nạp ngay!</p>
+            <div class="cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Giỏ hàng</span>
             </div>
-            <div class="redirect">
-                <a href="#">24h<br> Công nghệ</a>
+            <div class="history-order">
+              <a href="#"
+                >Lịch sử<br />
+                đơn hàng</a
+              >
             </div>
-            <div class="redirect">
-                <a href="#">Hỏi đáp</a>
-            </div>
-            <div class="redirect">
-                <a href="#">Game App</a>
-            </div>
+          </div>
+          <div class="promotion">
+            <div class="dot"></div>
+            <p>Viettel trả sau đến hạn thanh toán. Mua thẻ nạp ngay!</p>
+          </div>
+          <div class="redirect">
+            <a href="#"
+              >24h<br />
+              Công nghệ</a
+            >
+          </div>
+          <div class="redirect">
+            <a href="#">Hỏi đáp</a>
+          </div>
+          <div class="redirect">
+            <a href="#">Game App</a>
+          </div>
         </div>
-    </div>
-    <div class="header__menu">
+      </div>
+      <div class="header__menu">
         <div class="container">
-            <ul>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                        <span class="onsale">Giảm 5%</span>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#">
-                        <i class="fas fa-mobile-alt"></i>
-                        Điện thoại
-                    </a>
-                </li>
-            </ul>
+          <ul>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+                <span class="onsale">Giảm 5%</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>
+                Điện thoại
+              </a>
+            </li>
+          </ul>
         </div>
-    </div>
-</header>
-<section class="banner container">
-    <div class="main-banner">
+      </div>
+    </header>
+    <section class="banner container">
+      <div class="main-banner">
         <div class="main-banner__wrapper">
-            <div class="swiper mySwiper2">
-                <div class="main-banner__slidding swiper-wrapper">
-                    <div class="main-banner__slidding-item swiper-slide">
-                        <img src="./assets/img/1.png" alt="">
-                    </div>
-                    <div class="main-banner__slidding-item swiper-slide">
-                        <img src="./assets/img/photo_2021-09-25_16-56-14.jpg" alt="">
-                    </div>
-                    <div class="main-banner__slidding-item swiper-slide">
-                        <img src="./assets/img/photo_2021-09-25_16-56-31.jpg" alt="">
-                    </div>
-                    <div class="main-banner__slidding-item swiper-slide">
-                        <img src="./assets/img/photo_2021-09-25_16-56-35.jpg" alt="">
-                    </div>
-                    <div class="main-banner__slidding-item swiper-slide">
-                        <img src="./assets/img/photo_2021-09-25_16-56-39.jpg" alt="">
-                    </div>
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+          <div class="swiper mySwiper2">
+            <div class="main-banner__slidding swiper-wrapper">
+              <div class="main-banner__slidding-item swiper-slide">
+                <img src="./assets/img/1.png" alt="" />
+              </div>
+              <div class="main-banner__slidding-item swiper-slide">
+                <img src="./assets/img/photo_2021-09-25_16-56-14.jpg" alt="" />
+              </div>
+              <div class="main-banner__slidding-item swiper-slide">
+                <img src="./assets/img/photo_2021-09-25_16-56-31.jpg" alt="" />
+              </div>
+              <div class="main-banner__slidding-item swiper-slide">
+                <img src="./assets/img/photo_2021-09-25_16-56-35.jpg" alt="" />
+              </div>
+              <div class="main-banner__slidding-item swiper-slide">
+                <img src="./assets/img/photo_2021-09-25_16-56-39.jpg" alt="" />
+              </div>
             </div>
-            <div thumbsSlider="" class="swiper mySwiper main-banner__navigation">
-                <div class="swiper-wrapper ">
-                    <div class="main-banner__navigation-item swiper-slide">
-                        <p>Chờ đón siêu phẩm<br>iPhone 13 Pro</p>
-                    </div>
-                    <div class="main-banner__navigation-item swiper-slide">
-                        <p>Galaxy Z Fold3 | Flip3<br>Trả góp 0%</p>
-                    </div>
-                    <div class="main-banner__navigation-item swiper-slide">
-                        <p>Đặt trước Vivo X70Pro<br>Tặng ngay 3 triệu</p>
-                    </div>
-                    <div class="main-banner__navigation-item swiper-slide">
-                        <p>OPPO Reno 6 Series<br>Trả trước từ 1.9 triệu</p>
-                    </div>
-                    <div class="main-banner__navigation-item swiper-slide">
-                        <p>Sắm Apple Watch<br>Giảm đến 3.3 triệu</p>
-                    </div>
-                </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper main-banner__navigation">
+            <div class="swiper-wrapper">
+              <div class="main-banner__navigation-item swiper-slide">
+                <p>Chờ đón siêu phẩm<br />iPhone 13 Pro</p>
+              </div>
+              <div class="main-banner__navigation-item swiper-slide">
+                <p>Galaxy Z Fold3 | Flip3<br />Trả góp 0%</p>
+              </div>
+              <div class="main-banner__navigation-item swiper-slide">
+                <p>Đặt trước Vivo X70Pro<br />Tặng ngay 3 triệu</p>
+              </div>
+              <div class="main-banner__navigation-item swiper-slide">
+                <p>OPPO Reno 6 Series<br />Trả trước từ 1.9 triệu</p>
+              </div>
+              <div class="main-banner__navigation-item swiper-slide">
+                <p>Sắm Apple Watch<br />Giảm đến 3.3 triệu</p>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="secondary-banner">
+      </div>
+      <div class="secondary-banner">
         <div class="secondary-banner__item">
-            <img src="./assets/img/laptopdesk(3)-340x340.png" alt="">
-        </div>
-        <div class="secondary-banner__item">
-            <img src="./assets/img/StikyT8-340x340-1.png" alt="">
+          <img src="./assets/img/laptopdesk(3)-340x340.png" alt="" />
         </div>
         <div class="secondary-banner__item">
-            <img src="./assets/img/pk-340x340.png" alt="">
+          <img src="./assets/img/StikyT8-340x340-1.png" alt="" />
         </div>
         <div class="secondary-banner__item">
-            <img src="./assets/img/laptop-340x340.png" alt="">
+          <img src="./assets/img/pk-340x340.png" alt="" />
         </div>
-    </div>
-    <div class="vertical-banner">
-        <img src="./assets/img/t9-1200-60-1200x60-3.png" alt="">
-    </div>
-    <div class="side-banner">
+        <div class="secondary-banner__item">
+          <img src="./assets/img/laptop-340x340.png" alt="" />
+        </div>
+      </div>
+      <div class="vertical-banner">
+        <img src="./assets/img/t9-1200-60-1200x60-3.png" alt="" />
+      </div>
+      <div class="side-banner">
         <div class="side-banner__left">
-            <img src="./assets/img/sidebar_left.png" alt="">
+          <img src="./assets/img/sidebar_left.png" alt="" />
         </div>
         <div class="side-banner__right">
-            <img src="./assets/img/sidebar_right.png" alt="">
+          <img src="./assets/img/sidebar_right.png" alt="" />
         </div>
-    </div>
-</section>
-<footer>
+      </div>
+    </section>
 
-</footer>
-<script src="./assets/index.js"></script>
-</body>
+    <div class="onl-sale container">
+      <div class="content_onl-sale">
+        <p>Săn Sale Online Mỗi Ngày</p>
+      </div>
+      <div class="item_onl-sale">
+        <div class="first_item_onl-sale">
+          <div class="seccon_item_onl-sale">
+            <div class="thirst_item_onl-sale">
+              <div class="img_item_onl-sale">
+                <img 
+                  src="assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="info_item_onl-sale">
+                  <img src="assets/img/icon2-50x50.png" alt="">
+                  <span>Nhận thông tin</span>
+              </p>
+              <h3>iPhone 13 Pro Max 128GB</h3>
+              <p class="product_item_onl-sale">Hàng sắp về</p>
+              <strong>33.990.000₫</strong>
+            </div>
+          </div>
+          <div class="seccon_item_onl-sale">
+            <div class="thirst_item_onl-sale">
+              <div class="img_item_onl-sale">
+                <img
+                  src="assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="info_item_onl-sale">
+                  <img src="assets/img/icon2-50x50.png" alt="">
+                  <span>Nhận thông tin</span>
+              </p>
+              <h3>iPhone 13 Pro Max 128GB</h3>
+              <p class="product_item_onl-sale">Hàng sắp về</p>
+              <strong>33.990.000₫</strong>
+            </div>
+          </div>
+          <div class="seccon_item_onl-sale">
+            <div class="thirst_item_onl-sale">
+              <div class="img_item_onl-sale">
+                <img
+                  src="assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="info_item_onl-sale">
+                  <img src="assets/img/icon2-50x50.png" alt="">
+                  <span>Nhận thông tin</span>
+              </p>
+              <h3>iPhone 13 Pro Max 128GB</h3>
+              <p class="product_item_onl-sale">Hàng sắp về</p>
+              <strong>33.990.000₫</strong>
+            </div>
+          </div>
+          <div class="seccon_item_onl-sale">
+            <div class="thirst_item_onl-sale">
+              <div class="img_item_onl-sale">
+                <img
+                  src="assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="info_item_onl-sale">
+                  <img src="assets/img/icon2-50x50.png" alt="">
+                  <span>Nhận thông tin</span>
+              </p>
+              <h3>iPhone 13 Pro Max 128GB</h3>
+              <p class="product_item_onl-sale">Hàng sắp về</p>
+              <strong>33.990.000₫</strong>
+            </div>
+          </div>
+          <div class="seccon_item_onl-sale">
+            <div class="thirst_item_onl-sale">
+              <div class="img_item_onl-sale">
+                <img
+                  src="assets/img/iphone-13-pro-max-sierra-blue-600x600.jpg"
+                  alt=""
+                />
+              </div>
+              <p class="info_item_onl-sale">
+                  <img src="assets/img/icon2-50x50.png" alt="">
+                  <span>Nhận thông tin</span>
+              </p>
+              <h3>iPhone 13 Pro Max 128GB</h3>
+              <p class="product_item_onl-sale">Hàng sắp về</p>
+              <strong>33.990.000₫</strong>
+            </div>
+          </div>
+
+          
+         
+
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="./assets/index.js"></script>
+  </body>
 </html>
