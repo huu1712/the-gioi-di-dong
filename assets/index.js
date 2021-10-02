@@ -40,19 +40,37 @@ function showSlides(n) {
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     slidesPerView: 5,
+    spaceBetween: 10,
     freeMode: true,
     watchSlidesProgress: true,
+    watchSlidesVisibility: true,
 });
 var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    loopFillGroupWithBlank: true,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
     },
     thumbs: {
         swiper: swiper,
     },
 });
 
-
+var swiper3 = new Swiper(".onl-sale__list", {
+    slidesPerView: 5,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
